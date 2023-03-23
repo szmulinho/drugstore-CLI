@@ -1,9 +1,10 @@
-package cmd
+package update
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"net/http"
 
@@ -52,7 +53,7 @@ var updateDrugCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(updateDrugCmd)
+	cmd.RootCmd.AddCommand(updateDrugCmd)
 	updateDrugCmd.Flags().StringVarP(&model.DrugId, "id", "i", "", "Drug ID to update (required)")
 	updateDrugCmd.MarkFlagRequired("id")
 	updateDrugCmd.Flags().StringVarP(&model.Name, "name", "n", "", "New name of the drug")

@@ -1,7 +1,8 @@
-package cmd
+package jwt
 
 import (
 	"fmt"
+	"github.com/szmulinho/drugAppCli/cmd"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
@@ -31,5 +32,5 @@ var createTokenCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(createTokenCmd)
+	cmd.RootCmd.AddCommand(createTokenCmd)
 }

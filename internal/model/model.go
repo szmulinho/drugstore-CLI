@@ -1,7 +1,6 @@
 package model
 
 import (
-	"os"
 	"time"
 )
 
@@ -31,30 +30,10 @@ type User struct {
 	Password string `json:"password"`
 }
 
-type JwtToken struct {
-	Token string `json:"token"`
-}
-
-type Exception struct {
-	Message string `json:"message"`
-}
-
-type Response struct {
-	Data string `json:"data"`
-}
-
-var JwtKey = []byte(os.Getenv("JWT_KEY"))
-
 var Prescs []CreatePrescInput
-
-var Expiration string
-
-var Drugs []string
 
 type CreatePrescInput struct {
 	PreId      string    `json:"pre-id"`
 	Drugs      []string  `json:"drugs"`
 	Expiration time.Time `json:"expiration"`
 }
-
-var PrescriptionID string

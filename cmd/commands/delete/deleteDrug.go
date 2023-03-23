@@ -1,8 +1,9 @@
-package cmd
+package delete
 
 import (
 	"fmt"
 	"github.com/spf13/cobra"
+	"github.com/szmulinho/drugAppCli/cmd"
 	"net/http"
 )
 
@@ -34,5 +35,5 @@ var deleteDrugCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(deleteDrugCmd)
+	cmd.RootCmd.AddCommand(deleteDrugCmd)
 }

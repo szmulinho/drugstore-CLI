@@ -1,9 +1,10 @@
-package cmd
+package get
 
 import (
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/cobra"
+	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"io/ioutil"
 	"log"
@@ -36,5 +37,5 @@ var getPrescCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(getPrescCmd)
+	cmd.RootCmd.AddCommand(getPrescCmd)
 }

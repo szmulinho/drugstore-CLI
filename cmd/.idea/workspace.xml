@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9aeac85-5422-4b1c-9ea8-2fe053016e6a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/commands/create/addDrug.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/create/addDrug.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/create/addPrescription.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/create/addPrescription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/delete/deleteDrug.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/delete/deleteDrug.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/get/getAllDrugs.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/get/getAllDrugs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/get/getAllPrescriptions.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/get/getAllPrescriptions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/get/getOneDrug.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/get/getOneDrug.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/get/getOnePrescription.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/get/getOnePrescription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/jwt/createToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/jwt/createToken.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/update/updateDrug.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/update/updateDrug.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internal/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../internal/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2NQi15yrm0CGWRFjsxtIvsxttXd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9aeac85-5422-4b1c-9ea8-2fe053016e6a" name="Changes" comment="" />
+      <created>1679602490897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679602490897</updated>
+      <workItem from="1679602490898" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
