@@ -5,13 +5,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"net/http"
 	"time"
 )
 
-var addPrescCmd = &cobra.Command{
+var AddPrescCmd = &cobra.Command{
 	Use:   "addpresc",
 	Short: "add a new prescription",
 	Long:  "add a new prescription to the prescription database at localhost:8080/presc",
@@ -44,8 +43,7 @@ var addPrescCmd = &cobra.Command{
 }
 
 func init() {
-	cmd.RootCmd.AddCommand(addPrescCmd)
-	addPrescCmd.Flags().String("presc-id", "", "Prescription ID")
-	addPrescCmd.Flags().StringSlice("drugs", []string{}, "Drugs in prescription ")
-	addPrescCmd.Flags().String("expiration", "", "Prescription's expiration")
+	AddPrescCmd.Flags().String("presc-id", "", "Prescription ID")
+	AddPrescCmd.Flags().StringSlice("drugs", []string{}, "Drugs in prescription ")
+	AddPrescCmd.Flags().String("expiration", "", "Prescription's expiration")
 }

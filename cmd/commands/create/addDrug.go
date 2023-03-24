@@ -5,12 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"net/http"
 )
 
-var addDrugCmd = &cobra.Command{
+var AddDrugCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Add a new drug",
 	Long:  "Add a new drug to the drug database at localhost:8081/drug",
@@ -45,9 +44,9 @@ var addDrugCmd = &cobra.Command{
 }
 
 func init() {
-	cmd.RootCmd.AddCommand(addDrugCmd)
-	addDrugCmd.Flags().String("drug-id", "", "Drug ID")
-	addDrugCmd.Flags().String("name", "", "Drug Name")
-	addDrugCmd.Flags().String("type", "", "Drug Type")
-	addDrugCmd.Flags().String("price", "", "Drug Price")
+
+	AddDrugCmd.Flags().String("drug-id", "", "Drug ID")
+	AddDrugCmd.Flags().String("name", "", "Drug Name")
+	AddDrugCmd.Flags().String("type", "", "Drug Type")
+	AddDrugCmd.Flags().String("price", "", "Drug Price")
 }

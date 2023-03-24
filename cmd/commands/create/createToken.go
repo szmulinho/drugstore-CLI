@@ -1,15 +1,14 @@
-package jwt
+package create
 
 import (
 	"fmt"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/spf13/cobra"
 )
 
-var createTokenCmd = &cobra.Command{
+var CreateTokenCmd = &cobra.Command{
 	Use:   "jwt",
 	Short: "Create a JWT token",
 	Long:  "Create a new JWT token and print it to the console",
@@ -29,8 +28,4 @@ var createTokenCmd = &cobra.Command{
 
 		fmt.Println("JWT token:", tokenString)
 	},
-}
-
-func init() {
-	cmd.RootCmd.AddCommand(createTokenCmd)
 }

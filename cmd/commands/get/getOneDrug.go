@@ -4,14 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"io/ioutil"
 	"log"
 	"net/http"
 )
 
-var getDrugCmd = &cobra.Command{
+var GetDrugCmd = &cobra.Command{
 	Use:   "getdrug",
 	Short: "Get drug by ID",
 	Args:  cobra.ExactArgs(1),
@@ -34,8 +33,4 @@ var getDrugCmd = &cobra.Command{
 		}
 		fmt.Printf("Drug: %+v\n", model.D)
 	},
-}
-
-func init() {
-	cmd.RootCmd.AddCommand(getDrugCmd)
 }

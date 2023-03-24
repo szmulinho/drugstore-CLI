@@ -4,12 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"net/http"
 )
 
-var getAllPrescsCmd = &cobra.Command{
+var GetAllPrescsCmd = &cobra.Command{
 	Use:   "getprescs",
 	Short: "get the list of all prescriptions",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -36,5 +35,5 @@ var getAllPrescsCmd = &cobra.Command{
 }
 
 func init() {
-	cmd.RootCmd.AddCommand(getAllPrescsCmd)
+
 }

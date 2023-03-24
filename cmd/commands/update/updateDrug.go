@@ -4,14 +4,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"github.com/szmulinho/drugAppCli/internal/model"
 	"net/http"
 
 	"github.com/spf13/cobra"
 )
 
-var updateDrugCmd = &cobra.Command{
+var UpdateDrugCmd = &cobra.Command{
 	Use:   "update",
 	Short: "Update a drug with a specific ID",
 	RunE: func(cmd *cobra.Command, args []string) error {
@@ -53,10 +52,9 @@ var updateDrugCmd = &cobra.Command{
 }
 
 func init() {
-	cmd.RootCmd.AddCommand(updateDrugCmd)
-	updateDrugCmd.Flags().StringVarP(&model.DrugId, "id", "i", "", "Drug ID to update (required)")
-	updateDrugCmd.MarkFlagRequired("id")
-	updateDrugCmd.Flags().StringVarP(&model.Name, "name", "n", "", "New name of the drug")
-	updateDrugCmd.Flags().StringVarP(&model.Type, "type", "t", "", "New type of the drug")
-	updateDrugCmd.Flags().StringVarP(&model.Price, "price", "p", "", "New price of the drug")
+	UpdateDrugCmd.Flags().StringVarP(&model.DrugId, "id", "i", "", "Drug ID to update (required)")
+	UpdateDrugCmd.MarkFlagRequired("id")
+	UpdateDrugCmd.Flags().StringVarP(&model.Name, "name", "n", "", "New name of the drug")
+	UpdateDrugCmd.Flags().StringVarP(&model.Type, "type", "t", "", "New type of the drug")
+	UpdateDrugCmd.Flags().StringVarP(&model.Price, "price", "p", "", "New price of the drug")
 }

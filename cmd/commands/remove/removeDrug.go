@@ -1,15 +1,14 @@
-package delete
+package remove
 
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/szmulinho/drugAppCli/cmd"
 	"net/http"
 )
 
-var deleteDrugCmd = &cobra.Command{
-	Use:   "delete",
-	Short: "delete drug by ID",
+var RemoveDrugCmd = &cobra.Command{
+	Use:   "remove",
+	Short: "remove drug by ID",
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		id := args[0]
@@ -32,8 +31,4 @@ var deleteDrugCmd = &cobra.Command{
 			fmt.Printf("Error deleteding drug with ID %s\n", id, resp.Status)
 		}
 	},
-}
-
-func init() {
-	cmd.RootCmd.AddCommand(deleteDrugCmd)
 }
